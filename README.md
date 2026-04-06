@@ -1,7 +1,7 @@
 # Trabalho 2 - Inteligencia Aritificial
 
 ----------------------------------------------
-Informações do Projeto
+# Informações do Projeto
 
 Disciplina: Inteligência Artificial 
 
