@@ -77,7 +77,7 @@ utilizando apenas informações do estado atual.
 
 ---
 
-### 🧠 PEAS
+### PEAS
 
 | Elemento | Descrição |
 |----------|-----------|
@@ -115,3 +115,56 @@ A primeira etapa demonstra o funcionamento de um agente com arquitetura extremam
 Nas próximas etapas, a introdução de memória, representação interna e critérios mais elaborados de decisão permitirá comparar diferentes níveis de inteligência no mesmo ambiente.
 
 ---
+
+## Etapa 2 – Agente Reativo Baseado em Modelo
+
+### Descrição
+
+Nesta etapa, o agente passa a manter um estado interno, armazenando informações sobre o ambiente já explorado.
+
+Ele registra:
+
+- células visitadas
+- posições de obstáculos
+
+---
+
+### Objetivo
+
+Explorar o ambiente visitando o maior número possível de células, evitando repetições e obstáculos.
+
+---
+
+### Características
+
+- memória das posições visitadas
+- identificação de obstáculos
+- exploração mais eficiente
+- decisões baseadas em percepção + memória
+
+---
+
+### PEAS
+
+- **Performance:** maximizar cobertura do grid
+- **Environment:** grid com obstáculos estáticos
+- **Actuators:** movimentos N, S, L, O
+- **Sensors:** posição atual + memória interna
+
+---
+
+### Espaço de Estados
+
+- **Estado:** posição atual + mapa interno + células visitadas
+- **Estado inicial:** posição aleatória
+- **Ações:** movimentos válidos
+- **Transição:** deslocamento para célula livre
+- **Objetivo:** explorar o máximo possível do grid
+
+---
+
+### Melhorias em relação à Etapa 1
+
+- evita revisitar células
+- desvia de obstáculos
+- melhora eficiência da exploração
