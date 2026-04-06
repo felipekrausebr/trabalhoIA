@@ -160,3 +160,134 @@ Explorar o ambiente visitando o maior número possível de células, evitando re
 - evita revisitar células
 - desvia de obstáculos
 - melhora eficiência da exploração
+
+---
+
+## Etapa 3 – Agente Baseado em Objetivos
+
+### Descrição
+
+Nesta etapa, o agente passa a atuar com base em um objetivo explícito:
+
+- sair de uma posição inicial
+- alcançar uma posição final
+
+---
+
+### Objetivo
+
+Encontrar um caminho válido do início ao destino.
+
+---
+
+### Características
+
+- existência de estado objetivo
+- uso de planejamento
+- ambiente com obstáculos
+- busca por solução viável
+
+---
+
+### Algoritmo utilizado
+
+Foi utilizado o algoritmo:
+
+**BFS (Busca em Largura)**
+
+Justificativa:
+
+- garante encontrar um caminho válido
+- encontra o menor caminho em número de passos
+- adequado para ambientes sem custo diferenciado
+
+---
+
+### PEAS
+
+- **Performance:** alcançar o destino
+- **Environment:** grid com obstáculos
+- **Actuators:** movimentos N, S, L, O
+- **Sensors:** posição atual + posição objetivo + mapa
+
+---
+
+### Espaço de Estados
+
+- **Estado:** posição atual
+- **Estado inicial:** posição inicial aleatória
+- **Ações:** movimentos válidos
+- **Transição:** deslocamento no grid
+- **Objetivo:** atingir posição final
+- **Estratégia:** BFS
+
+---
+
+### Evolução
+
+- comportamento orientado a metas
+- introdução de planejamento
+- solução deixa de ser aleatória
+
+---
+
+## Etapa 4 – Agente Baseado em Utilidade
+
+### Descrição
+
+Nesta etapa, o agente passa a considerar não apenas alcançar o objetivo, mas também qualidade da solução, medida pelo custo total.
+
+Cada célula do grid possui um custo associado, representando diferentes tipos de terreno.
+
+---
+
+### Objetivo
+
+Encontrar o caminho de menor custo total entre o início e o destino.
+
+---
+
+### Características
+
+- ambiente com custos
+- avaliação de múltiplos caminhos
+- otimização da solução
+- decisão baseada em utilidade
+
+---
+
+### Algoritmo utilizado
+
+**Dijkstra**
+
+Justificativa:
+
+- encontra o caminho de menor custo
+- adequado para grafos com pesos positivos
+- considera custo acumulado
+
+### PEAS
+
+- **Performance:** minimizar custo total
+- **Environment:** grid com custos
+- **Actuators:** movimentos N, S, L, O
+- **Sensors:** posição atual + custos + objetivo
+
+---
+
+### Espaço de Estados
+
+- **Estado:** posição atual
+- **Estado inicial:** posição inicial definida
+- **Ações:** movimentos válidos
+- **Transição:** movimento com custo associado
+- **Objetivo:** alcançar destino com menor custo
+- **Estratégia:** Dijkstra
+
+---
+
+### Evolução
+
+- escolha entre múltiplas soluções
+- otimização do caminho
+- análise quantitativa de desempenho
