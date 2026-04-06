@@ -39,4 +39,12 @@ células vazias
 obstáculos estáticos
 custos associados às células
 
+----------------------------------------------
+
 # Etapa 1 – Agente Reativo Simples
+
+# Descrição
+
+Nesta etapa, foi implementado um agente reativo simples, cuja tomada de decisão é baseada exclusivamente na percepção atual do ambiente.
+
+O agente não possui memória, não registra estados anteriores e não constrói qualquer representação interna do ambiente.
