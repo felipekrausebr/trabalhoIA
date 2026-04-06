@@ -4,6 +4,7 @@
 Informações do Projeto
 
 Disciplina: Inteligência Artificial 
+
 Aluno: Felipe Grein Krause
 
 ----------------------------------------------
