@@ -104,16 +104,8 @@ utilizando apenas informações do estado atual.
 - pode repetir trajetórias  
 - baixa eficiência  
 - não aprende  
-- não realiza planejamento  
-
----
-
-## Considerações
-
-A primeira etapa demonstra o funcionamento de um agente com arquitetura extremamente simples, evidenciando as limitações de sistemas que dependem apenas da percepção imediata.
-
-Nas próximas etapas, a introdução de memória, representação interna e critérios mais elaborados de decisão permitirá comparar diferentes níveis de inteligência no mesmo ambiente.
-
+- não realiza planejamento
+  
 ---
 
 ## Etapa 2 – Agente Reativo Baseado em Modelo
