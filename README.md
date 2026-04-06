@@ -48,3 +48,37 @@ custos associados às células
 Nesta etapa, foi implementado um agente reativo simples, cuja tomada de decisão é baseada exclusivamente na percepção atual do ambiente.
 
 O agente não possui memória, não registra estados anteriores e não constrói qualquer representação interna do ambiente.
+
+# Objetivo 
+
+Alcançar as quatro fronteiras do grid (Norte, Sul, Leste e Oeste) utilizando apenas informações do estado atual.
+
+# Caracteristicas
+
+ausência total de memória
+sem modelo interno
+ambiente sem obstáculos
+comportamento puramente reativo
+decisões locais e imediatas
+
+# PEAS
+
+Performance: alcançar todas as fronteiras do grid
+Environment: grid 10x10 sem obstáculos
+Actuators: movimentos nas direções N, S, L, O
+Sensors: posição atual e limites do grid
+
+# Espaço de Estados
+
+Estado: posição atual do agente (linha, coluna)
+Estado inicial: posição aleatória
+Ações: mover nas quatro direções
+Transição: deslocamento para célula adjacente válida
+Objetivo: alcançar todas as bordas do grid
+
+# Limitações
+
+comportamento aleatório
+pode repetir trajetórias
+baixa eficiência
+não aprende nem planeja
